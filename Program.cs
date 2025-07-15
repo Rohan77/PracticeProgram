@@ -22,7 +22,7 @@ namespace PracticePrograms
                         Day01_ValueVsReference.Run();
                         break;
                     case "2":
-                       // Day02_BoxingUnboxing.Run();  // Add this class next
+                        Day02_BoxingUnboxing.Run(); 
                         break;
                     case "0":
                         Console.WriteLine("Exiting...");
