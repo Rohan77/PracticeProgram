@@ -27,7 +27,13 @@ namespace PracticePrograms
                 { "14", ("Day 3 - Func<T> examples",          Day03_Func.Run)             },
                 { "15", ("Day 3 - Action<T> examples", Day03_Action.Run) },
                 { "16", ("Day 3 - Predicate<T> examples", Day03_Predicate.Run) },
-                { "17", ("Day 4 - Task vs Thread vs async/await", Day04_Async.Run) }
+                { "17", ("Day 4 - Task vs Thread vs async/await", Day04_Async.Run) },
+                { "18", ("Day 4 - Exception Handling (try-catch-finally-using)", Day04_ExceptionHandling.Run) },
+                { "19", ("Day 4 - LINQ Basics", Day04_LINQBasics.Run) },
+                { "20", ("Day 4 - LINQ Advanced", Day04_LINQAdvanced.Run) },
+                { "21", ("Day 4 - LINQ Query vs Method Syntax", Day04_LINQComparison.Run) }
+
+           
             };
 
         static void Main(string[] args)
