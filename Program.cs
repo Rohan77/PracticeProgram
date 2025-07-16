@@ -26,7 +26,8 @@ namespace PracticePrograms
                 { "13", ("Day 3 - Events",                    Day03_Events.Run)           },
                 { "14", ("Day 3 - Func<T> examples",          Day03_Func.Run)             },
                 { "15", ("Day 3 - Action<T> examples", Day03_Action.Run) },
-                { "16", ("Day 3 - Predicate<T> examples", Day03_Predicate.Run) }
+                { "16", ("Day 3 - Predicate<T> examples", Day03_Predicate.Run) },
+                { "17", ("Day 4 - Task vs Thread vs async/await", Day04_Async.Run) }
             };
 
         static void Main(string[] args)

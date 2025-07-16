@@ -1,12 +1,12 @@
 # PracticePrograms
 
 Console-based C# learning project — daily interview preparation for experienced .NET developers.
+[1] It Contains Program
+[2] Detailed Notes On Each Topic, Including When, Why, And How To Use The Concept, Along With Best Practices And Real-Life Analogies
 
 ---
 
 ## Structure
-
-
 
 ```
 PracticePrograms/
@@ -42,58 +42,58 @@ dotnet run
 The app will show a menu with all available day-wise examples. Select a number to run the corresponding example.
 
 ✅ Completed Topics
-Day 1 – C# Basics
+        Day 1 – C# Basics
 
-    Value Types vs Reference Types
+            Value Types vs Reference Types
 
-    Boxing and Unboxing
+            Boxing and Unboxing
 
-Day 2 – OOP Concepts
+        Day 2 – OOP Concepts
 
-    Class & Object
+            Class & Object
 
-    Inheritance
+            Inheritance
 
-    Polymorphism
+            Polymorphism
 
-    Abstraction
+            Abstraction
 
-    Interface
+            Interface
 
-    Encapsulation
+            Encapsulation
 
-    Static vs Instance
+            Static vs Instance
 
-    Constructor Types
+            Constructor Types
 
-    IS-A vs HAS-A (Inheritance vs Composition)
+            IS-A vs HAS-A (Inheritance vs Composition)
 
-Day 3 – Delegates & Events
+        Day 3 – Delegates & Events
 
-    Delegates
+            Delegates
 
-    Events
+            Events
 
-    Func<T>
+            Func<T>
 
-    Action<T>
+            Action<T>
 
-    Predicate<T>
+            Predicate<T>
 
-🧠 How to Add a New Example
+        🧠 How to Add a New Example
 
-   1. Create a file DayXX_TopicName.cs in the PracticePrograms folder.
+        1. Create a file DayXX_TopicName.cs in the PracticePrograms folder.
 
-   2. Use a static class with a public static void Run() method.
+        2. Use a static class with a public static void Run() method.
 
-   3. Add a new entry to the Topics dictionary in Program.cs:
+        3. Add a new entry to the Topics dictionary in Program.cs:
 
 
-⚙️ Using push.ps1
+        ⚙️ Using push.ps1
 
-The push.ps1 file automates git add, commit, and push operations.
-🛠️ How to run it (once permissions are set):
-pwsh ./push.ps1
+        The push.ps1 file automates git add, commit, and push operations.
+        🛠️ How to run it (once permissions are set):
+        pwsh ./push.ps1
 
 
 Happy coding! ✨
