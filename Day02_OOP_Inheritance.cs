@@ -66,6 +66,45 @@ namespace PracticePrograms
              Interview Tip:
             - Use inheritance when multiple classes share common behavior.
             - Use virtual/override when you want to change base behavior in child.
+
+
+        What
+            Inheritance is an object-oriented programming principle where one class (child) acquires the properties and behaviors of another class (parent).
+            Enables code reuse, specialization, and hierarchical structure in your application.
+
+        Why
+            To avoid code duplication and promote reuse of common functionality.
+            To build extensible and easily maintainable systems.
+            Supports polymorphism — enabling objects to be treated as their parent type.
+
+        When
+            When you have an “is-a” relationship.
+            Example: Dog is an Animal, Car is a Vehicle.
+            When multiple classes share common features (fields, methods).
+            When you want to extend or modify behavior of a base class.
+            When you want to create a hierarchy of classes.
+            When you want to override or extend base behavior in derived classes.
+            When you want to implement polymorphism.
+            When you want to create a base class that can be used as a type for multiple derived classes.
+            When you want to create a common interface for multiple classes.
+            When you want to create a base class that can be used to define common properties and methods for derived classes.
+
+    Real-World Analogy
+        Parent-child relationship: A child inherits traits from their parents.
+        Vehicle inheritance: Car, Bike, and Truck all inherit wheels, engine from Vehicle but add their own features.
+
+
+    Best Practices
+        Use inheritance only for “is-a” relationships — not just to share code.
+        Prefer composition over inheritance if relationship is not strict.
+        Avoid deep inheritance chains (more than 2–3 levels becomes fragile).
+        Keep base classes focused and small to reduce tight coupling.
+
+    When to Avoid Inheritance
+        If the child class does not truly follow the base class contract, avoid inheritance.
+        If functionality is shared, prefer interfaces or composition.
+        Use abstract classes if base behavior should not be instantiated directly.
+
             */
         }
     }

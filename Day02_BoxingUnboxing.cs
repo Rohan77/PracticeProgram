@@ -75,5 +75,30 @@ namespace PracticePrograms
             - Avoid it where possible — prefer generics, type-safe collections, and structs only when necessary.
             - Know this deeply for performance-critical applications.
 
-            Pro
+            
+What
+    Boxing is the process of converting a value type to a reference type (usually to object).
+    Unboxing is the reverse — converting a reference type back to a value type.
+
+Why
+    .NET is type-safe but unified — sometimes we need to store value types where only reference types are accepted (like object, collections before generics).
+    Boxing and unboxing allow that, but come with performance cost due to heap allocation and type casting.
+
+When
+You’ll see boxing when:
+ Assigning a value type to an object or interface
+ Adding value types into non-generic collections (like ArrayList)
+You’ll see unboxing when:
+  Retrieving boxed value back from object and casting it
+
+
+Real-World Analogy
+    Boxing is like putting a coin (value type) into a box (object).
+    Unboxing is taking it out and using it as a coin again.
+    Every time you box/unbox, there’s overhead — like opening/closing the box.
+
+Best Practices
+ Avoid boxing/unboxing in performance-critical code.
+ Prefer generics to avoid boxing (e.g., List<int> vs ArrayList).
+ Always check the type before unboxing to prevent runtime exceptions.
 */

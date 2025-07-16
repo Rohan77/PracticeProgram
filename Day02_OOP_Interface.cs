@@ -70,7 +70,41 @@ namespace PracticePrograms
             - Prefer interfaces when building scalable, decoupled architecture
             - Interface segregation and dependency inversion principles are built on interfaces
             - Most real-world .NET projects rely heavily on interfaces for unit testing and mocking
-            */
+
+
+
+
+What
+    Interface defines a contract — a set of methods/properties a class must implement, but no implementation is provided (till C# 8 default methods).
+    Abstract class can provide both abstract members (no body) and concrete members (with logic).
+    Both are used to define base behavior, but differ in purpose and usage.
+
+Why
+    To enforce common behavior across unrelated classes.
+    To support polymorphism and loose coupling.
+    Interface allows multiple inheritance; abstract class allows base implementation.
+
+When
+    Use an interface when:
+        You need to define capabilities (e.g., IPrintable, IDisposable)
+        You want to apply behavior across unrelated classes
+        You need multiple inheritance
+    Use an abstract class when:
+        You want to provide a base implementation
+        You want to force certain behavior while allowing extensibility
+        You want to avoid code duplication among related types
+
+Real-World Analogy
+    Interface: A contract like “Driver's License”. Anyone who drives must follow the rules — doesn’t matter if it’s a car, truck, or bike.
+    Abstract Class: A base product template. You get a semi-finished product and must customize parts of it.
+
+Best Practices
+    Use interfaces to represent behavior or capabilities.
+    Use abstract classes to share common functionality across related classes.
+    If in doubt, start with interface — it's more flexible.
+    Prefer interfaces in frameworks, libraries, and public APIs for extensibility.
+    Avoid mixing abstract class and interface unnecessarily unless needed for framework design.
+ */
         }
     }
 }

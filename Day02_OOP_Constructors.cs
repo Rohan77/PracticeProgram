@@ -95,6 +95,20 @@ namespace PracticePrograms
                - Used to load static config like environment variables or license keys
                - Real-world: When a mobile app loads app settings (theme, language) once on startup
 
+               5. Private Constructor:
+                - Used in Singleton pattern to prevent external instantiation.
+                - Ensures only one instance of the class exists
+                - Example: Logger class that provides a single instance for logging throughout the application
+                - Used to restrict instantiation from outside the class
+
+                    public class Logger
+                    {
+                        private Logger() { }
+
+                        public static Logger Instance { get; } = new Logger();
+                    }
+                    
+
             Rules:
             - Static constructor can't take parameters
             - You can't call it explicitly
@@ -122,8 +136,38 @@ namespace PracticePrograms
             - Static constructors are useful in Singleton patterns
             - Parameterized constructors are mandatory in Domain-Driven Design (DDD) entities
 
-            In our previous project, we used parameterized constructors in domain models like Invoice, User, and used static constructors to initialize shared configuration settings using appsettings.json
-            */
+            In our previous project, we used parameterized constructors in domain models like Invoice, User, and used static constructors to initialize shared 
+            configuration settings using appsettings.json
+
+
+What
+    Constructor is a special method used to initialize an object when it is created.
+    In C#, constructors have the same name as the class and no return type.
+    You can overload constructors and even use static or private constructors based on design needs.
+
+Why
+    To set the initial state of the object when it's created.
+    To enforce required data and logic when instantiating a class.
+    Helps implement design patterns like factory, singleton, or dependency injection.
+
+When
+    When you want to provide default setup or custom initialization logic.
+    When object creation needs controlled behavior (e.g., logging, validation, restricted access).
+    When building a class used by frameworks (e.g., for deserialization or dependency injection).
+
+Real-World Analogy
+    A constructor is like a factory setup for a product.
+    Every time a new product is made, you decide what parts to install (based on model, features).
+    Some factories allow full customization (parameterized), some just build defaults (default), and some are one-time setups (static).
+
+
+Best Practices
+    Avoid putting heavy logic in constructors — use factory methods if needed.
+    Use constructor injection for dependencies (used in DI frameworks).
+    Keep default constructor if class is used by serializers (e.g., JSON.NET).
+    Use base() to call base class constructors if inheritance is involved.
+
+*/
         }
     }
 }

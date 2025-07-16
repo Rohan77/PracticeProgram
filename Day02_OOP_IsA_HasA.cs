@@ -85,7 +85,32 @@ namespace PracticePrograms
             Interview Tip:
             - Composition is more flexible, supports better design principles like SOLID
             - In real-world projects, prefer HAS-A (composition) over IS-A
-            */
+
+
+
+What
+    IS-A represents an inheritance relationship — one class is a specialized version of another.
+    HAS-A represents a composition relationship — one class contains or uses another class.
+
+Why
+    To decide the right design approach for your class relationships.
+    To follow Object-Oriented Design principles and keep systems extensible, decoupled, and maintainable.
+    Avoid misuse of inheritance — which often leads to tight coupling and fragile code.
+
+When
+    Use IS-A (inheritance) when there is a clear hierarchy and shared behavior that can be extended.
+    Use HAS-A (composition) when one object uses another to do its work or contains it as part of its state.
+    Modern design prefers composition over inheritance for flexibility.
+
+Best Practices
+    Default to composition when possible.
+    Use inheritance only when:
+        There’s a genuine “is-a” relationship
+        You need polymorphic behavior
+        You are working with a base framework or abstract contract
+    Avoid deep inheritance chains — prefer interfaces and composition instead.
+
+*/
         }
     }
 }

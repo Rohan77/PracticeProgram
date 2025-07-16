@@ -71,7 +71,38 @@ namespace PracticePrograms
             - Always use private fields with public getters/setters or methods
             - C# auto-properties (public string Name { get; set; }) simplify encapsulation
             - Use validation inside setters/methods to protect object state
-            */
+
+
+What
+    Encapsulation means binding data (fields) and methods (behavior) together in a single unit — a class.
+    It also means restricting direct access to an object’s internal state and requiring interaction through public methods or properties.
+
+Why
+    To protect object integrity by controlling how data is accessed or modified.
+    To achieve data hiding — reduce risk of misuse or corruption.
+    Makes code more maintainable, modular, and secure.
+
+When
+    When designing classes where internal details should be hidden from consumers.
+    When you want to allow access to data only through controlled logic (getters/setters, validations).
+    When following SOLID principles, especially the Single Responsibility and Open/Closed principles.
+Real-World Analogy
+    Think of a vending machine — you don’t access the internal parts or coins directly.
+    You interact through buttons and the money slot. Machine controls the internal flow.
+    Similarly, a class hides its internal logic and exposes a safe interface.
+
+Best Practices
+    Make all fields private by default — expose only what’s needed.
+    Use properties instead of public fields for future flexibility.
+    Group related data and behavior in one class — that’s encapsulation.
+    Keep internal implementation abstracted behind clean interfaces.
+
+When to Avoid
+    Avoid exposing internal state via public fields — breaks encapsulation.
+    Don't make everything public for quick access — leads to tightly coupled, fragile design.
+
+
+ */
         }
     }
 }

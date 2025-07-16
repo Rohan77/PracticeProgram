@@ -79,6 +79,26 @@ Question 1: What is the difference between Value Type and Reference Type in C#?
             - Value types = actual value | copied on assignment
             - Reference types = memory reference | shared across assignments
             - Classes = reference type, Structs = value type
+
+
+ What:
+    Value types store data directly in memory (stack).
+    Reference types store a reference to the data (on heap).
+
+ Why:
+    To understand how memory is managed in .NET (stack vs heap).
+    To avoid unexpected behavior during assignment, parameter passing, and comparisons.
+    It impacts performance, mutability, and garbage collection.
+When:
+    When you're working with data structures, method parameters, or optimizing memory.
+    When you see unexpected behavior like one object affecting another after assignment.
+    When designing APIs or libraries that need to be efficient and predictable.
+    When you need to understand how C# handles data types under the hood.
+    While designing DTOs, models, or writing performance-critical code.
+
+ Real-World Analogy:
+    Value Type: Like photocopying a document. You can write on your copy, original remains unchanged.
+    Reference Type: Like two remotes pointing to the same TV. Change from one reflects on the other.
 */
 
 
